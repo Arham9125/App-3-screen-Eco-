@@ -5,20 +5,20 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ScaffoldBackground,
+      backgroundColor: scaffoldBackground,
       body: SingleChildScrollView(
         //Pad column
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          VerticalSpace,
+          verticalSpace,
           Padding(
             padding: const EdgeInsets.only(left: 10),
             child: Text(
-              HomeTitleOne,
-              style: SectionalTitleStyle,
+              homeTitleOne,
+              style: sectionalTitleStyle,
               textAlign: TextAlign.start,
             ),
           ),
-          VerticalSpace,
+          verticalSpace,
           Row(
             children: [
               Box(
@@ -35,16 +35,16 @@ class Home extends StatelessWidget {
               Box('Self Transfer', Icons.loop, Color(0xff622E2A)),
             ],
           ),
-          VerticalSpace,
+          verticalSpace,
           Padding(
             padding: const EdgeInsets.only(left: 10),
             child: Text(
-              HomeTitleTwo,
-              style: SectionalTitleStyle,
+              homeTitleTwo,
+              style: sectionalTitleStyle,
               textAlign: TextAlign.left,
             ),
           ),
-          VerticalSpace,
+          verticalSpace,
           Row(
             children: [
               Box('Mobile Recharge ', Icons.smartphone, Color(0xff32650A)),
@@ -60,12 +60,12 @@ class Home extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 10),
             child: Text(
-              HomeTitleThree,
-              style: SectionalTitleStyle,
+              homeTitleThree,
+              style: sectionalTitleStyle,
               textAlign: TextAlign.left,
             ),
           ),
-          VerticalSpace,
+          verticalSpace,
           Row(
             children: [
               ticketBox(Icons.movie, 'Movies'),

@@ -56,25 +56,25 @@ class Mainpage extends StatelessWidget {
                 Tab(
                   child: Text(
                     "Home",
-                    style: TabBarTextStyle,
+                    style: tabBarTextStyle,
                   ),
                 ),
                 Tab(
                   child: Text(
                     "Balance",
-                    style: TabBarTextStyle,
+                    style: tabBarTextStyle,
                   ),
                 ),
                 Tab(
                   child: Text(
                     "Offers",
-                    style: TabBarTextStyle,
+                    style: tabBarTextStyle,
                   ),
                 ),
                 Tab(
                   child: Text(
                     "Rewards",
-                    style: TabBarTextStyle,
+                    style: tabBarTextStyle,
                   ),
                 ),
               ]),

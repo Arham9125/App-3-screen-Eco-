@@ -18,7 +18,7 @@ Box(String text, IconData icon, Color boxColor) {
           minLeadingWidth: -1,
           title: Text(
             text,
-            style: BoxTextStyle,
+            style: boxTextStyle,
             softWrap: false,
             overflow: TextOverflow.fade,
             textAlign: TextAlign.start,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:paymentapp/mainpage.dart';
+import 'package:paymentapp/screens/tabbar.dart';
 import 'package:paymentapp/cursol.dart';
-import 'package:paymentapp/intro.dart';
+import 'package:paymentapp/screens/splash.dart';
 
 void main() {
   runApp(const MyApp());

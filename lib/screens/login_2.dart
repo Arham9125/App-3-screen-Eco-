@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:paymentapp/shared/Widgetcons.dart';
+import 'package:paymentapp/shared/shared.dart';
 import 'package:paymentapp/screens/home.dart';
-import 'package:paymentapp/mainpage.dart';
+import 'package:paymentapp/screens/tabbar.dart';
 
 class Loginn extends StatelessWidget {
   const Loginn({Key? key}) : super(key: key);
@@ -33,7 +33,7 @@ class Loginn extends StatelessWidget {
                       fit: BoxFit.contain,
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                       top: 90,
                       left: 20,
                       child: Text(
@@ -44,26 +44,16 @@ class Loginn extends StatelessWidget {
                             fontWeight: FontWeight.w600),
                       )),
                 ]),
-                Center(
-                  child: Container(
-                    padding: EdgeInsets.all(14),
-                    width: 400,
-                    height: 80,
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Center(
                     child: TextFormField(
                       keyboardType: TextInputType.number,
-                      style: TextStyle(
-                        color: Color(0xff858891),
-                        fontFamily: "LeagueSpartan",
-                        fontWeight: FontWeight.bold,
-                        fontSize: 23,
-                      ),
-                      initialValue: "Enter Mobile Number",
                       decoration: InputDecoration(
+                        prefixText: '+92 | ',
+                        hintText: 'Enter your mobile number',
                         filled: true,
                         fillColor: Color(0xffEDEFFF),
-                        prefix: Text(
-                          "+92 |     ",
-                        ),
                         border: OutlineInputBorder(
                             borderSide: BorderSide.none,
                             borderRadius: BorderRadius.circular(30)),
@@ -71,9 +61,7 @@ class Loginn extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 10,
-                ),
+                verticalSpace,
                 InkWell(
                   onTap: () {
                     Navigator.push(context,
@@ -96,12 +84,17 @@ class Loginn extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 20),
-                Texty("Your personal datails are safe with us", 15),
-                SizedBox(
-                  height: 20,
+                verticalSpace,
+                VerticalDivider(),
+                Text(
+                  loginFooterText1,
+                  style: footerTextStyle,
                 ),
-                Texty("Read our Privicy Policy and Terms and Conditions", 12)
+                verticalSpace,
+                Text(
+                  loginFooterText2,
+                  style: footerTextStyle,
+                )
               ],
             ),
           ),
