@@ -4,7 +4,7 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:paymentapp/Login.dart';
 import 'package:paymentapp/Login2.dart';
-import 'package:paymentapp/Widgetcons.dart';
+import 'package:paymentapp/shared/Widgetcons.dart';
 import 'package:paymentapp/cursol.dart';
 // import 'package:carousel_slider/carousel_slider.dart';
 

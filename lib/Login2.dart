@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:paymentapp/Widgetcons.dart';
-import 'package:paymentapp/home.dart';
+import 'package:paymentapp/shared/Widgetcons.dart';
+import 'package:paymentapp/screens/home.dart';
 import 'package:paymentapp/mainpage.dart';
 
 class Loginn extends StatelessWidget {
